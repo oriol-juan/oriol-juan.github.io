@@ -104,3 +104,69 @@ h2 {
     font-size: 36px;
   }
 }
+
+
+/* 7. Research card */
+
+.featured-card {
+  background-color: #f8f9fb;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.card-visual {
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.research-visual {
+  background: linear-gradient(
+    135deg,
+    #e7ecf8,
+    #dce8f1,
+    #eef0fa
+  );
+}
+
+.card-visual span {
+  font-size: 14px;
+  color: #53647a;
+  letter-spacing: 1px;
+}
+
+.card-content {
+  padding: 32px;
+}
+
+.card-category {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #777777;
+}
+
+.card-content h3 {
+  font-size: 26px;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.card-content p {
+  color: #666666;
+  line-height: 1.7;
+}
+
+.card-content a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #222222;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
