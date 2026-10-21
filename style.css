@@ -170,3 +170,68 @@ h2 {
 .card-content a:hover {
   text-decoration: underline;
 }
+
+
+/* 8. Projects */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.project-card {
+  border: 1px solid #eeeeee;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.project-card .card-visual {
+  height: 180px;
+}
+
+.avalanche-visual {
+  background: linear-gradient(
+    135deg,
+    #dce9ed,
+    #c7d8e1
+  );
+}
+
+.vehicle-visual {
+  background: linear-gradient(
+    135deg,
+    #eee8df,
+    #ded7d0
+  );
+}
+
+.project-content {
+  padding: 24px;
+}
+
+.project-content h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.project-content p {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.project-content .project-tags {
+  color: #888888;
+  font-size: 12px;
+  margin-top: 24px;
+}
+
+/* 9. Responsive project layout */
+
+@media (max-width: 650px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
