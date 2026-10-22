@@ -111,7 +111,8 @@ h2 {
 
 .featured-card {
   background-color: #f8f9fb;
-  border-radius: 12px;
+  border: 1px solid #ececec;
+  border-radius: 18px;
   overflow: hidden;
   margin-top: 30px;
 }
@@ -139,7 +140,7 @@ h2 {
 }
 
 .card-content {
-  padding: 32px;
+  padding: 36px 40px 40px;
 }
 
 .card-category {
@@ -245,9 +246,11 @@ h2 {
 }
 
 .featured-image {
-  height: 280px;
-  object-fit: contain;
-  background-color: #f8f9fb;
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .project-image {
@@ -302,5 +305,19 @@ nav a[aria-current="page"] {
 }
 
 .section-link:hover {
+  text-decoration: underline;
+}
+
+/* Clickable research heading */
+
+.card-content h3 a {
+  color: inherit;
+  text-decoration: none;
+  display: inline;
+  margin-top: 0;
+  font-weight: inherit;
+}
+
+.card-content h3 a:hover {
   text-decoration: underline;
 }

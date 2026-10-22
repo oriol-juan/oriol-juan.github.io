@@ -1,0 +1,106 @@
+/* Research-page theme. Intentionally separate from the portfolio's style.css. */
+:root {
+  --ink: #232a2e;
+  --muted: #637078;
+  --accent: #397c83;
+  --line: #e3e8e8;
+  --paper: #ffffff;
+  --white: #ffffff;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  line-height: 1.65;
+}
+
+/* A site-wide-looking navigation, without reusing the explorer's header styles. */
+.portfolio-nav {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.portfolio-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.portfolio-nav a:hover,
+.portfolio-nav a:focus-visible {
+  color: var(--ink);
+}
+
+.portfolio-nav .portfolio-brand {
+  color: var(--ink);
+  font-size: 17px;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.portfolio-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 24px;
+}
+
+.portfolio-nav a[aria-current="page"] {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* Match the portfolio's restrained content width and typography. */
+header.hero,
+main,
+footer,
+.story-nav {
+  max-width: 1100px;
+}
+
+.hero {
+  padding-top: 58px;
+}
+
+.hero h1 {
+  font-size: clamp(40px, 6vw, 70px);
+}
+
+.story-nav {
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.card,
+.experiment-card,
+.route {
+  border-color: var(--line);
+  box-shadow: none;
+}
+
+#plot {
+  min-width: 0;
+}
+
+@media (max-width: 650px) {
+  .portfolio-nav {
+    padding: 18px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .portfolio-links {
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .hero {
+    padding-top: 36px;
+  }
+}
