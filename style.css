@@ -235,3 +235,21 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
+/* 10. Real project images */
+
+.card-image {
+  display: block;
+  width: 100%;
+}
+
+.featured-image {
+  height: 280px;
+  object-fit: contain;
+  background-color: #f8f9fb;
+}
+
+.project-image {
+  height: 190px;
+  object-fit: cover;
+}
